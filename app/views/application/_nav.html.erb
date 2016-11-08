@@ -1,9 +1,9 @@
 <header class="row">
-  <%= link_to image_tag("go.png", :width =>'100%', :id =>'logo2', :class =>'img-responsive col-xs-12'), index_url %>
+  <div class="col-xs-10"><%= link_to image_tag("go.png", :width =>'100%', :id =>'logo2', :class =>'img-responsive'), index_url %></div>
   <%= link_to image_tag("go.png", :id =>'logo', :class =>'img-responsive col-xs-offset-1 col-xs-2'), index_url %>
   
-  <nav id="nav" class="row navbar navbar-fixed-top ">
-    <div class="container-fluid col-xs-11">
+  <nav id="nav" class="navbar col-xs-8 ">
+    <div class="container-fluid ">
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li id="a1" class="a1"><%= link_to "Inicio", index_url %></li>
@@ -17,7 +17,7 @@
     </div>
   </nav>
   <!--Boton desplegable. Solo visible en with < 680px -->
-  <div class="dropdown">
+  <div class="col-xs-1 dropdown">
     <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
      <h3 id="menu">Menú</h3>
      <span class="caret"></span>
