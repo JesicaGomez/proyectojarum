@@ -19,6 +19,7 @@
 
 /*Estilos para el nav*/
 header{
+	width: 100%;
 	margin-bottom: -20px;
 }
 #logo{
@@ -57,7 +58,7 @@ ul li#a1 a:hover{
 #linea1{
 	position: relative;
     width:100%;
-    height:35px; 
+    height:25px; 
     background-color:#667C63;}
 
 /*Estilos para el footer*/
@@ -67,9 +68,11 @@ footer{
     width: 100%;
     height: 250px;
     padding: 2%;
-    margin-top: -10px;}
+    margin-top: -10px;
+    margin-left: 0px;}
 
 #icono{
+	margin-top: 10px;
 	margin-left: 80px;
 	margin-right: -80px;
     display: block;}
@@ -94,7 +97,20 @@ footer{
 	text-align: right;
     margin-right: -10px;}
 
-@media screen and (min-width: 260px) and (max-width: 760px) {
+/*estilos para aliandos*/
+#aliados{
+    height: 330px}
+
+#al1{
+
+    margin-left: 50px;
+    position: center;}
+
+
+/*Boton desplegable, footer min*/
+@media screen and (min-width: 260px) and (max-width: 730px) {
+    
+    header{width: 100%}
 
 	#logo{display: none}
 
@@ -126,19 +142,45 @@ footer{
 	#redes{display: none}
 
 	#icono{
-	margin-left: 10px;
-	margin-right: 20px;}
+		margin-top: 5px;
+	    margin-left: 10px;
+	    margin-right: 20px;}
 
 	#contacto{margin-top: 20px}
 
 	.whatnone{text-align: right}
+    
+    footer{width: 100%}
 
-	h3{font-size: 15px}
+	#foo{font-size: 15px}
+
+
+	#aliados{
+	    margin-bottom: 10px;
+	    height: 330px;
+	    padding: 15px;}
+
+
+	#al1{
+        height: 100px;
+		margin-left:90px;
+	    margin-bottom: 10px;}
+
+	 
+    #colal1{margin-left: -10px}
+
+	#colal2, #colal1{width: 100%}
+
+	.altext{
+	 	position: center;
+	 	margin-top: -5px;
+	 	margin-bottom: -10px;
+	    font-size: 20px;}
 
 
 }
 
-@media screen and (min-width: 761px) and (max-width: 1100px) {
+@media screen and (min-width: 731px) and (max-width: 1100px) {
 
 	nav{margin-top: 1px}
 
@@ -155,6 +197,23 @@ footer{
 	.whatnone{
 		position: right;
 		text-align: right;}
+
+	#aliados{height: 230px}
+
+	#al1{
+		margin-left: 30px;
+	    height: 100px;
+	    width: 300px;}
+
+	#colal1{margin-top: -10px}    
+
+	#colal2{margin-top: 20px}
+
+	.altext{font-size: 20px}
+
+	.text{
+		font-size: 26px;
+	    margin-top: -5px;}
 
 }
 
