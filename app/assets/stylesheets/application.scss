@@ -107,8 +107,9 @@ footer{
     position: center;}
 
 
+
 /*Boton desplegable, footer min*/
-@media screen and (min-width: 260px) and (max-width: 730px) {
+@media screen and (min-width: 230px) and (max-width: 730px) {
     
     header{width: 100%}
 
@@ -153,24 +154,28 @@ footer{
     footer{width: 100%}
 
 	#foo{font-size: 15px}
+    
+    #gmail{
+    	height: 60px;
+    	width: 60px;}
 
+    #red{
+	    height: 50px;
+	    width: 50px;}
 
 	#aliados{
 	    margin-bottom: 10px;
-	    height: 330px;
+	    height: 420px;
 	    padding: 15px;}
 
-
 	#al1{
-        height: 100px;
-		margin-left:90px;
-	    margin-bottom: 10px;}
+        height: 150px;
+		position: center;}
 
-	 
     #colal1{margin-left: -10px}
 
 	#colal2, #colal1{width: 100%}
-
+    #selali{height: 150px}
 	.altext{
 	 	position: center;
 	 	margin-top: -5px;
@@ -214,6 +219,6 @@ footer{
 	.text{
 		font-size: 26px;
 	    margin-top: -5px;}
-
+    
 }
 
