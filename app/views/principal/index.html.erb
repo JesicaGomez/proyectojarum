@@ -1,10 +1,64 @@
 <!--La seccion1 es donde esta almacenado el sylder principal -->
-<section class="row" id="seccion1" style="height: 500px; background-color: #181919">
-	<h3 class="ban"><center>Bienvenidos <br> Nuestra pagina actualmente esta en desarrollo</center></h3>
+<section class="row" id="seccion1">
+	<!--carousel principal codigo de w3school -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+			</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+			    <%= image_tag("moravia.jpg", id:"imgcarousel", alt:"Cerro de Moravia")%>
+	            <div class="carousel-caption">
+                  <h1>Moravia Florece Para la Vida</h1>
+                  <p>El antiguo vertedero de basura al aire libre es ahora icono de transformacion socio-ambiental del Barrio Moravia en Medellín. Uno de los frutos del proyecto tiene nombre propio, se llama JARUM </p>
+                </div>			
+            </div>
+
+			<div class="item">
+				<%= image_tag("suculentas.jpg", id:"imgcarousel", alt:"Cerro de Moravia")%>
+	            <div class="carousel-caption">
+                  <h1>¿Qué ofrecemos al mercado?</h1>
+                  <p>Rosas, claveles, nardos, suculentas  y diferentes especies de plantas, servicios de  jardinería, poda y paisajismo.</p>
+                </div>
+			</div>
+
+			<div class="item">
+				<%= image_tag("slider3.jpg", id:"imgcarousel", alt:"Cerro de Moravia")%>
+	            <div class="carousel-caption">
+                  <h1>¿Qué necesidades estamos resolviendo?</h1>
+                  <p>Estamos embelleciendo con plantas ornamentales los terrenos y espacios muertos en el área metropolitana del valle del aburra.</p>
+                </div>
+			</div>
+
+			<div class="item">
+				<%= image_tag("slider4.jpg", id:"imgcarousel", alt:"Cerro de Moravia")%>
+	            <div class="carousel-caption">
+                  <h1>¿Cuáles son los atributos de nuestra propuesta de valor?</h1>
+                  <p>Convertir los espacios y terrenos muertos en lugares llenos de vida, para el disfrute de los ciudadanos y aportar a la mejora del aire</p>
+                </div>
+			</div>
+		</div>
+
+		<!-- Left and right controls -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Anterior</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Siguiente</span>
+		</a>
+	</div>
 </section>
 <!--video in seccion3 -->
 <section class="row" id="seccion3">
-    <div><center><h2 class="ban">Jarum nace del macro-proyecto<br><b>Moravia florece para la vida</b></h2></center></div>
+	<div><center><h2 class="ban">Jarum nace del macro-proyecto<br><b>Moravia florece para la vida</b></h2></center></div>
 	<div>
 		<object  id="convideo" data="http://www.youtube.com/v/k7LLH1yt7eQ">
 		</object>

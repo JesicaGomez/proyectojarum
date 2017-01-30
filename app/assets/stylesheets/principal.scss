@@ -3,6 +3,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /*Index*/
+#seccion1{
+    height: 530px; 
+    background-color: #181919;}
+
+#myCarousel{
+    height: 500px;}
+
+#imgcarousel{
+    opacity: 0.6;
+    margin-top: 10px;
+    height: 520px;
+    width: 100%;
+    background-size: cover;}
+
+.carousel-caption{font-size: 25px;}
 
 #seccion3{
     width: 100%;
@@ -47,6 +62,8 @@ div .baner{
     margin-right: 3px;}
 
 @media screen and (min-width: 731px) and (max-width: 1100px){
+    #seccion1{height: 380}
+    #myCarousel{height: 380}
     #seccion4{height: 450px}
     #seccion3{height: 550px}
 
@@ -57,7 +74,7 @@ div .baner{
 
  @media screen and (min-width: 500px) and (max-width: 730px) {
     #seccion4{height: 450px}
-    #seccion3{height: 400px}
+    #seccion3{display: none}
 
     #convideo{
     width: 380px;
