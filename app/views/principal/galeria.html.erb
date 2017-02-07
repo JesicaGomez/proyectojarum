@@ -1,2 +1,40 @@
-<h1>Principal#galeria</h1>
-<p>Find me in app/views/principal/galeria.html.erb</p>
+<p id="linea1"></p>
+<div class="w3-container jumbotron">
+  <h2 id="galery">Nuestros productos</h2>
+  <p>An example of using images to indicate how many slides there are in the slideshow, and which image the user is currently viewing (red border).</p>
+
+  <div class="row" id="galery">
+    <div class="col-xs-3">
+      <div>
+        <h2>Tipos de plantas</h2>
+        <div class="list-group">
+          <%= link_to "Suculentas", galeria_url,  {:class=>"list-group-item" }%>
+          <%= link_to "Carnívoras", galeria_url,  {:class=>"list-group-item" }%>
+          <%= link_to "Ornamentales", galeria_url,  {:class=>"list-group-item" }%>
+          <%= link_to "Aromaticas", galeria_url,  {:class=>"list-group-item" }%>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-9 container">
+
+      <div class="w3-content galeria" style="max-width:600px">
+       <%= image_tag("carni.jpg",class:"mySlides", style:"width:100%")%>
+       <%= image_tag("aroma.jpg",class:"mySlides", style:"width:100%")%>
+       <%= image_tag("orna.jpg",class:"mySlides", style:"width:100%")%>
+       <div class="w3-row-padding w3-section">
+        <div class="w3-col s3">
+          <%= image_tag("carni.jpg",class:"demo w3-border w3-hover-shadow", style:"width:100%",onclick:"currentDiv(1)")%>
+        </div>
+        <div class="w3-col s3">
+         <%= image_tag("aroma.jpg",class:"demo w3-border w3-hover-shadow", style:"width:100%",onclick:"currentDiv(2)")%>
+       </div>
+       <div class="w3-col s3">
+        <%= image_tag("orna.jpg",class:"demo w3-border w3-hover-shadow", style:"width:100%",onclick:"currentDiv(3)")%>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<p id="linea7"></p>
