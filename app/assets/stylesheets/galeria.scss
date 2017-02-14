@@ -1,0 +1,41 @@
+.mySlides {display:none}
+.demo {cursor:pointer}
+
+#galery{
+    margin-top: 0px;
+    margin-bottom:-30px; 
+    padding: 5%;}
+
+.list-group-item{background-color:#667C63}
+
+section#scroll{
+      margin-top: -20px;
+      position: relative;}
+  
+
+  ul.nav-pills {
+      top: 370px;
+      margin-bottom: 700px;
+      position: fixed;}
+  
+
+  div.col-sm-9 div {
+      height: auto;
+      font-size: 28px; }
+
+  #section1 {color: #fff; background-color: #667C63;}
+  #section2 {color: #fff; background-color: #181919;}
+  #section3 {color: #fff; background-color: #667C63;}
+  #section4 {color: #fff; background-color: #181919;}
+  
+  @media screen and (max-width: 810px) {
+    section#scroll{top: 200px}
+
+    .scrollmin{margin-top: 450px;}
+
+    #section1, #section2, #section3, #section4,  {
+        margin-left: 150px;}
+
+    ul.nav-pills {
+      top: 250px;
+  }  }
