@@ -29,7 +29,7 @@
     position: relative;} 
 
 .titleseccion2{
-    font-family:'NeutraText-BookSC';
+    font-family:'NeutraTextTF-Demi';;
     color:white;
     font-size: 25pt;
     text-align:center;
@@ -98,7 +98,7 @@
 
 #tituloculti{
     margin-top: 20px;
-    font-family:'NeutraText-BookSC';
+    font-family:'NeutraTextTF-Demi';
     color:white;
     font-size: 35px;
     text-align:center;}
@@ -116,7 +116,7 @@
     text-align: center;}
 
 #TS{ 
-    font-family:'NeutraText-BookSC';
+    font-family:'NeutraTextTF-Demi';
     color:white;
     font-size: 32px;
     text-align:center;
@@ -181,12 +181,12 @@
 
 /*seccion3*/
 #seccion3{
+    margin: auto;
     width: 100%;
     height: 730px;
     background-color: #1C2615;
     background-image: url("SQ3.jpg");
-    background-size:cover;
-    background-position: center;}
+    background-size:cover;}
 
 #convideo{
     width: 700px;
@@ -225,15 +225,22 @@ div .baner{
 /*Galery*/
 
 
-@media screen and (min-width: 731px) and (max-width: 1100px){
-    #myCarousel{height: 380px}
-    .carousel-caption{font-size: 20px}
-    #seccion2{ height:1100px} 
+@media screen and (min-width: 731px) and (max-width: 1300px){
+    #seccion1{height: 490px}
+    #myCarousel{height: 480px}
+    #imgcarousel{height: 480px}
+    .carousel-caption{font-size: 18px}
+    #seccion2{ height:1000px} 
     .imgseccion2{
         width: 50%;
         height: 380px;}
     .colortextseccion2{font-size: 18px}
-    #Tplantas{height: 80px}
+    #Tplantas{
+        height: 50px;
+        margin-top: -40px;
+        margin-bottom: 10px;}
+    #t1{padding: auto;
+        margin-top: -100px;}
     #TS{font-size: 24px}
 
     #tituloculti{
@@ -241,7 +248,9 @@ div .baner{
         font-size: 30px;}
 
     #partes2{height: 380px}
-    #seccion4{height: 450px}
+    .sucu:hover #textoS{font-size: 14px}
+
+    #seccion4{height: 380px}
     #seccion3{height: 550px}
 
     #convideo{
@@ -250,11 +259,19 @@ div .baner{
 }
 
 @media screen and (min-width: 500px) and (max-width: 730px) {
-    .carousel-caption{font-size: 18px;}
-    #seccion2{height: 900px}
+    #seccion1{height: 460px}
+    #myCarousel{height: 450px}
+    #imgcarousel{height: 450px}
+    .carousel-caption{font-size: 15px;}
+    #seccion2{height: 890px}
     .imgseccion2{height: 300px}
     .colortextseccion2{font-size: 14px}
-    #Tplantas{height: 45px}
+    #Tplantas{
+        margin-left: -80px;
+        height: 45px;
+        margin-top: -50px;
+        margin-bottom: 10px;}
+
     #TS{font-size: 20px}
 
     #tituloculti{
@@ -262,16 +279,14 @@ div .baner{
         font-size: 25px;}
 
     #partes2{height: 300px}
+    .sucu:hover #textoS{display: none}
+    .sucu:hover #cuadroS{ display: none}
     #seccion4{height: 450px}
     #seccion3{display: none}
 
-    #convideo{
-        width: 380px;
-        height: 300px;}
-
     #seccion4{
 	   padding: 15px;
-	   height: 300px;
+	   height: 240px;
        background-position: center;
 	   background-color: #181919;}
 
@@ -279,6 +294,7 @@ div .baner{
         font-size: 20px;
  	    font-family: verdana;
 	    color: white;
+        margin-top: -35px;
         margin-left: 20px;}
 
     #b1{margin-left: 5px;}
@@ -286,18 +302,27 @@ div .baner{
  }
 
 @media screen and (min-width: 230px) and (max-width: 500px) {
+    #seccion1{height: 410px}
+    #myCarousel{height: 400px}
+    #imgcarousel{height: 400px}
     .carousel-caption{font-size: 15px;}
-    #seccion2{height: 700px}
+    #seccion2{height: 680px}
     .imgseccion2{height: 230px}
     .colortextseccion2{font-size: 10px}
-    #Tplantas{height: 30px}
+    #Tplantas{
+        height: 30px;
+        margin-left: -80px;
+        margin-top: -60px;}
+
     #TS{font-size: 13px}
 
     #tituloculti{
-        margin-top: 8px; 
+        margin-top: 14px;
         font-size: 20px}
 
     #partes2{height: 230px}
+    .sucu:hover #textoS{display: none}
+    .sucu:hover #cuadroS{ display: none}
     #seccion3{display: none}
     #convideo{
     width: 280px;
@@ -305,7 +330,7 @@ div .baner{
 
     #seccion4{
          padding: 10px;
-         height: 200px;
+         height: 180px;
          background-position: center;
          background-color: #181919;}
 
@@ -314,6 +339,7 @@ div .baner{
         font-size: 13px;
         font-family: verdana;
         color: white;
+        margin-top: -10px;
         margin-left: 10px;}
 
     #b1{

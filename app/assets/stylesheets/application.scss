@@ -117,9 +117,11 @@ footer{
 
 	#logo2{
 		position: center;
-        width: 100%;
-        height: 200px;
-        margin-top: -110px;
+        width: 90%;
+        height: 150px;
+        margin-top: -130px;
+        margin-left: auto;
+        margin-right: auto;
 		display: block;}
 
 	nav{
@@ -135,7 +137,7 @@ footer{
 
 	button{
 		background-color: #667C63;
-		height: 70px;
+		height: 65px;
 	    width: 100%;}
 
     .dropdown-menu{
@@ -173,16 +175,18 @@ footer{
 
 	#aliados{
 	    margin-bottom: 10px;
-	    height: 420px;
+	    height: 390px;
 	    padding: 15px;}
 
 	#al1{
-        height: 150px;
-		position: center;}
+        height: 90px;
+	    width: 200px;
+        margin-left: 90px;
+	    position: center;}
 
     #colal1{margin-left: -10px}
 
-	#colal2, #colal1{width: 100%}
+	#colal2, #colal1{width: 95%}
     #selali{height: 150px}
 	.altext{
 	 	position: center;
@@ -211,11 +215,11 @@ footer{
 		position: right;
 		text-align: right;}
 
-	#aliados{height: 230px}
+	#aliados{height: 210px}
 
 	#al1{
 		margin-left: 30px;
-	    height: 100px;
+	    height: 90px;
 	    width: 300px;}
 
 	#colal1{margin-top: -10px}    
