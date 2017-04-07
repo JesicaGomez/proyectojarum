@@ -16,7 +16,6 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
 /*Estilos para el nav*/
 header{
 	width: 100%;
@@ -138,6 +137,9 @@ footer{
 	button{
 		background-color: #667C63;
 		height: 65px;
+	    width: 100%;}
+	#dropdownMenu1{
+	    height: 65px;
 	    width: 100%;}
 
     .dropdown-menu{

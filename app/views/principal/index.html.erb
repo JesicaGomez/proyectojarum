@@ -56,7 +56,24 @@
 		</a>
 	</div>
 </section>
+<!--La seccion4 es donde esta almacenado el banner principal -->
+<section  class="row" id="seccion4">
+	<div  class="col-xs-4">
+		<h2 class="ban"><center>GALERIAS</center></h2>
+		<%= link_to image_tag("nueva1.jpg", :width =>'100%', :id =>'b1'), galeria_url %>
 
+	</div>
+	<div class="col-xs-4">
+		<h2 class="ban"><center>PAISAJÍSMO</center></h2>
+		<%= link_to image_tag("jardin.jpg", :width =>'100%', :id =>'b2'), servicios_url %>
+
+	</div>
+	<div class="col-xs-4">
+		<h2 class="ban"><center>HISTORIA</center></h2>
+		<%= link_to image_tag("arbol.jpg", :width =>'100%', :id =>'b3'), quienes_url %>
+	</div>
+</section>
+<!--servicios importantes de la corporacion -->
 <section id="seccion2">
 	<div><div id="titleseccion2"><p class="titleseccion2">Compost</p></div>
 	 	<div id="titleseccion2"><p class="titleseccion2">Paisajísmo</p></div>
@@ -88,29 +105,4 @@
 
 </section>
 
-<!--video in seccion3 -->
-<section class="row" id="seccion3">
-	<div><center><h2 class="ban">Jarum nace del macro-proyecto<br><b>Moravia florece para la vida</b></h2></center></div>
-	<div>
-		<object  id="convideo" data="http://www.youtube.com/v/k7LLH1yt7eQ">
-		</object>
-	</div>
-</section>	
-<!--La seccion4 es donde esta almacenado el banner principal -->
-<section  class="row" id="seccion4">
-	<div  class="col-xs-4">
-		<h2 class="ban"><center>GALERIAS</center></h2>
-		<%= link_to image_tag("nueva1.jpg", :width =>'100%', :id =>'b1'), galeria_url %>
-
-	</div>
-	<div class="col-xs-4">
-		<h2 class="ban"><center>PAISAJÍSMO</center></h2>
-		<%= link_to image_tag("jardin.jpg", :width =>'100%', :id =>'b2'), servicios_url %>
-
-	</div>
-	<div class="col-xs-4">
-		<h2 class="ban"><center>HISTORIA</center></h2>
-		<%= link_to image_tag("arbol.jpg", :width =>'100%', :id =>'b3'), quienes_url %>
-	</div>
-</section>
 <%= render 'aliados' %>
