@@ -1,5 +1,7 @@
 <div class="container">
-        <div><h3>Nuestros produtos</h3></div>
+        <br>
+        <div><h3>Nuestros productos</h3></div>
+        <br>
         <div id="main_area">
                 <!-- Slider -->
                 <div class="row">
@@ -11,22 +13,22 @@
                                     <!-- Carousel items -->
                                     <div class="carousel-inner">
                                         <div class="active item" data-slide-number="0">
-                                        <%= image_tag("SQ2.jpg") %></div>
+                                        <%= image_tag("suculenta1.PNG", id:"slidegalery", alt:"suculenta", :class => "img-responsive") %></div>
 
                                         <div class="item" data-slide-number="1">
-                                        <%= image_tag("SQ3.jpg") %></div>
+                                        <%= image_tag("suculenta2.PNG", id:"slidegalery", alt:"suculenta", :class => "img-responsive") %></div>
 
                                         <div class="item" data-slide-number="2">
-                                        <%= image_tag("SQ4.jpg") %></div>
+                                        <img src="http://placehold.it/770x300&text=three"></div>
 
                                         <div class="item" data-slide-number="3">
-                                        <%= image_tag("SQ5.jpg") %></div>
+                                        <img src="http://placehold.it/770x300&text=four"></div>
 
                                         <div class="item" data-slide-number="4">
-                                        <%= image_tag("carni.jpg") %></div>
+                                        <img src="http://placehold.it/770x300&text=five"></div>
 
                                         <div class="item" data-slide-number="5">
-                                        <%= image_tag("aroma.jpg") %></div>
+                                        <img src="http://placehold.it/770x300&text=six"></div>
                                     </div><!-- Carousel nav -->
                                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                                         <span class="glyphicon glyphicon-chevron-left"></span>                                       
@@ -41,9 +43,9 @@
 
                             <div id="slide-content" style="display: none;">
                                 <div id="slide-content-0">
-                                    <h2>Slider One</h2>
+                                    <h2>Suculenta</h2>
                                     <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                                    <p class="sub-text">$5.000 COP</p>
                                 </div>
 
                                 <div id="slide-content-1">
@@ -84,27 +86,27 @@
                         <!-- Bottom switcher of slider -->
                         <ul class="hide-bullets">
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-0"><%= image_tag("SQ2.jpg") %></a>
+                                <a class="thumbnail" id="carousel-selector-0"><%= image_tag("suculenta1.PNG", alt:"suculenta", :class => "img-responsive") %></a>
                             </li>
 
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-1"><%= image_tag("SQ3.jpg") %></a>
+                                <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/170x100&text=two"></a>
                             </li>
 
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-2"><%= image_tag("SQ4.jpg") %></a>
+                                <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/170x100&text=three"></a>
                             </li>
 
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-3"><%= image_tag("SQ5.jpg") %></a>
+                                <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/170x100&text=four"></a>
                             </li>
 
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-4"><%= image_tag("carni.jpg") %></a>
+                                <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/170x100&text=five"></a>
                             </li>
 
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-5"><%= image_tag("aroma.jpg") %></a>
+                                <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=six"></a>
                             </li>
                         </ul>                 
                 </div>

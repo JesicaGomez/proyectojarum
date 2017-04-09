@@ -18,6 +18,10 @@ h2{font-size: 55px}
 #rombos{margin-left: -250px}
 #rombos2{margin-left: -320px}
 
+#rombo{
+    height: 4em;
+    width: 4em;}
+
 .social li {
     display: block;
     height: 4em;
@@ -103,8 +107,41 @@ h2{font-size: 55px}
     bottom: 0;
     left: 75%;
 }
+.rombotextresponsive{display: none}
+
 @media screen and (min-width: 800px) and (max-width: 1000px){
     #rombos{margin-left: -450px}
     #rombos2{margin-left: -530px}
 }
-@media screen and (min-width: 200px) and (max-width: 800px){#boody{display:none}}
+@media screen and (min-width: 600px) and (max-width: 800px){
+    #rombos{
+        margin-top: -30px;
+        margin-left: -530px;}
+
+    #rombos2{
+        margin-top: -30px;
+        margin-left: -580px;}
+
+    .rombotext{display: none}
+    .rombotextresponsive{
+        display: inline-block;
+        font-size: 22px;}
+}
+@media screen and (min-width: 200px) and (max-width: 600px){
+    #rombos{
+        margin-bottom: -43px;
+        margin-top:-50px; 
+        margin-left: -625px;}
+
+    #rombos2{
+        margin-top: -55px;
+        margin-left: -690px;}
+
+    .fa{margin-left: -80px} 
+    .rombotext{display: none}
+    .rombotextresponsive{ 
+        margin-top: 10px;
+        margin-left: -70px;
+        display: inline-block;
+        font-size: 18px;}
+}

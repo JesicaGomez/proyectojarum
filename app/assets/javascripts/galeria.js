@@ -1,4 +1,3 @@
-//= Galeria
   jQuery(document).ready(function($) {
  
         $('#myCarousel').carousel({
