@@ -14,4 +14,12 @@ Rails.application.routes.draw do
 
   get '/actividades', to:'principal#actividades'
 
+  get '/suculentas', to:'principal#suculentas'
+
+  get '/aromaticas', to:'principal#aromaticas'
+
+  get '/ornamentales', to:'principal#ornamentales'
+
+  get '/carnivoras', to:'principal#carnivoras'
+
 end

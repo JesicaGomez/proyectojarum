@@ -8,7 +8,17 @@
             <li id="a1" class="a1"><%= link_to "Inicio", index_url %></li>
             <li id="a1"><%= link_to "Quienes Somos", quienes_url, :class=>"a2" %></li>
             <li id="a1"><%= link_to "Servicios", servicios_url %></li>
-            <li id="a1"><%= link_to "Galeria", galeria_url %></li>
+            <li class="dropdown">
+              <a id="al" href="galeria_url" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cultivos <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Suculentas", suculentas_url %></li>
+                <li><%= link_to "Aromaticas", aromaticas_url %></li>
+                <li><%= link_to "Carnivoras", carnivoras_url %></li>
+                <li><%= link_to "Ornamentales", ornamentales_url %></li>
+                <li role="separator" class="divider"></li>
+                <li><%= link_to "Otros cultivos", servicios_url %></li>
+              </ul>
+            </li>
             <li id="a1"><%= link_to "Viveros", viveros_url %></li>
             <li id="a1"><%= link_to "Actividades", actividades_url %></li>
           </ul>
@@ -26,7 +36,7 @@
      </button>
      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
        <li><%= link_to "Quienes Somos", quienes_url%></li>
-       <li><%= link_to "Galeria", galeria_url %></li>
+       <li><%= link_to "Cultivos", galeria_url %></li>
        <li><%= link_to "Viveros", viveros_url %></li>
        <li><%= link_to "Actividades", actividades_url %></li>
        <li><%= link_to "Servicios", servicios_url %></li>

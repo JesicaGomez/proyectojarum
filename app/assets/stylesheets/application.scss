@@ -16,6 +16,8 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
 /*Estilos para el nav*/
 header{
 	width: 100%;
@@ -36,8 +38,17 @@ header{
 	font-size: 170%;
     display: inline-block;}
 
-.a1{
-	margin-left: 10px}
+ul li a#a1 {
+    background-color:white;
+    color:#667C63; 
+    display:block;
+    text-decoration:none;
+    text-align: center;}
+
+ul li a#a1 :hover{
+    background-color:#667C63;
+    color:#fff;
+    transition:0.5s;}
 
 ul li#a1 a{
     background-color:white;
@@ -51,7 +62,7 @@ ul li#a1 a:hover{
     color:#fff;
     transition:0.5s;}
 
-.dropdown{
+div .dropdown{
  	display: none}
 
 #linea1{
@@ -131,7 +142,7 @@ footer{
 		display: none;
 	    margin-top: -100%;}
 
-	.dropdown{
+	div .dropdown{
 		margin-top: -20px;
 		width: 100%;
 		position: center;
