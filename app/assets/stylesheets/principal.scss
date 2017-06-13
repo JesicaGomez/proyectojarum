@@ -260,9 +260,9 @@ div .baner{
 }
 
 @media screen and (min-width: 500px) and (max-width: 730px) {
-    #seccion1{height: 460px}
-    #myCarousel{height: 450px}
-    #imgcarousel{height: 450px}
+    #seccion1{height: 440px}
+    #myCarousel{height: 430px}
+    #imgcarousel{height: 430px}
     .carousel-caption{font-size: 15px;}
     #seccion2{height: 890px}
     .imgseccion2{height: 300px}
@@ -303,10 +303,11 @@ div .baner{
  }
 
 @media screen and (min-width: 230px) and (max-width: 500px) {
-    #seccion1{height: 410px}
-    #myCarousel{height: 400px}
-    #imgcarousel{height: 400px}
-    .carousel-caption{font-size: 15px;}
+    #seccion1{height: 380px}
+    #myCarousel{height: 370px}
+    #imgcarousel{height: 370px}
+    .carousel-caption{font-size: 15px;
+        margin-bottom: 20px;}
     #seccion2{height: 680px}
     .imgseccion2{height: 230px}
     .colortextseccion2{font-size: 10px}
