@@ -1,4 +1,6 @@
 #quienes{margin:auto}
+#mv{margin: auto}
+#mvresponsive{display: none}
 /*improvisto*/
 #boody{
 	margin-bottom: 10px;
@@ -100,6 +102,11 @@ h2{font-size: 55px}
     #rombos2{margin-left: -530px}
 }
 @media screen and (min-width: 600px) and (max-width: 800px){
+    #quienes{height: 300px}
+    #mv{display: none}
+    #mvresponsive{
+        display: block;
+        margin:auto;}
     #rombos{
         margin-top: -30px;
         margin-left: -530px;}
@@ -114,6 +121,11 @@ h2{font-size: 55px}
         font-size: 22px;}
 }
 @media screen and (min-width: 200px) and (max-width: 600px){
+    #quienes{height: 350px}
+    #mv{display: none}
+    #mvresponsive{
+        display: block;
+        margin:auto;}
     #rombos{
         margin-bottom: -43px;
         margin-top:-50px; 
@@ -124,14 +136,13 @@ h2{font-size: 55px}
         margin-left: -730px;}
 
     #rombo{
-    height: 3em;
-    width: 3em;}
+        height: 3em;
+        width: 3em;}
 
     .social li {
-    height: 3em;
-    line-height: 5em;
-    margin: -45.45px;
-    width: 3em;}
+        height: 3em;
+        margin: -55.45px;
+        width: 3em;}
 
     .fa{margin-left: -80px} 
     .rombotext{display: none}
