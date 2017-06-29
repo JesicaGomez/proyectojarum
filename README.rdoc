@@ -36,18 +36,3 @@ $ git push heroku yourbranch:master
 #Mi proyecto
 
 Version 2.1 del proyecto Jarum
-
-Incluye{
-	Servicios, -->http://bootsnipp.com/snippets/featured/tabbed-slider-carousel-inspired-by-sevenxde
-	galerias, --> http://bootsnipp.com/snippets/40Z3Q
-	  lupa http://bootsnipp.com/snippets/featured/microscope-for-images
-	actividades, --->http://bootsnipp.com/snippets/featured/social-icons-with-fontawesome-and-nice-effect-hover
-	viveros,
-}
-
-Lo que falta{
-	Devise,
-	mailes,
-	cancancan,
-	geocode,
-}
