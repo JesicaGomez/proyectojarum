@@ -21,9 +21,10 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* precompile?
 
 $ rake assets:precompile RAILS_ENV=production
+
 
 commit
 
