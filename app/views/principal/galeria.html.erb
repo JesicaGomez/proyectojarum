@@ -1,15 +1,184 @@
-<div id="culti"><p id="tituloculti">Cultivo de plantas</p></div>
-    <div id="Tplantas">
-        <div id="T1"><p id="TS">Suculentas</p></div>
-        <div id="T1"><p id="TS">Carnívoras</p></div>
-        <div id="T1"><p id="TS">Aromáticas</p></div>
-        <div id="T1"><p id="TS">Ornamentales</p></div>
+<div class="carousel-grid">
+      <figure class="carousel-item">
+        <%= image_tag("opuntia.jpg", id:"slidegalery", alt:"opuntia", :class => "img-responsive") %>
+        <figcaption>Cactus</figcaption>
+      </figure>
+      <figure class="carousel-item">
+        <%= image_tag("lenguesuegra.jpg", id:"slidegalery", alt:"lenguesuegra", :class => "img-responsive") %>
+        <figcaption>Lenguesuegra</figcaption>
+      </figure>
+      <figure class="carousel-item">
+         <%= image_tag("suculenta4.jpg", id:"slidegalery", alt:"suculenta", :class => "img-responsive") %>
+        <figcaption>Suculenta</figcaption>
+      </figure>
+      <figure class="carousel-item">
+        <%= image_tag("suculentaycactus.jpg", alt:"suculenta y cactus", :class => "img-responsive") %>
+        <figcaption>Suculenta</figcaption>
+      </figure>
+      <figure class="carousel-item">
+        <%= image_tag("arreglosuculentayotros.jpg", alt:"arreglo de suculentas y cactus", :class => "img-responsive") %>
+        <figcaption>Arreglo</figcaption>
+      </figure>
+      <figure class="carousel-item">
+        <%= image_tag("suculentass.jpg", alt:"suculenas", id:"slidegalery", :class => "img-responsive") %>
+        <figcaption>Suculenta</figcaption>
+      </figure>
+      <figure class="carousel-item">
+        <%= image_tag("pinomateo.PNG", alt:"Cactus", id:"slidegalery", :class => "img-responsive") %>
+        <figcaption>Cactus</figcaption>
+      </figure>
+      <figure class="carousel-item">
+        <%= image_tag("suculentascultivo.PNG", alt:"Cultivo de suculentas", id:"slidegalery", :class => "img-responsive") %>
+        <figcaption>Suculentas</figcaption>
+      </figure>
+      <figure class="carousel-item">
+        <%= image_tag("arreglosuculentayotros.jpg", alt:"arreglo de suculentas y cactus", :class => "img-responsive") %>
+        <figcaption>Arreglo</figcaption>
+      </figure>
+      <figure class="carousel-item">
+        <%= image_tag("suculentass.jpg", alt:"suculenas", id:"slidegalery", :class => "img-responsive") %>
+        <figcaption>Suculenta</figcaption>
+      </figure>
+      <figure class="carousel-item">
+        <%= image_tag("pinomateo.PNG", alt:"Cactus", id:"slidegalery", :class => "img-responsive") %>
+        <figcaption>Cactus</figcaption>
+      </figure>
     </div>
-    <div id="partes2">
-        <div class="sucu" id="suculenta"><div id="cuadroS"><p id="textoS">Las plantas suculentas o crasas son aquellas en las que algún órgano o parte se ha modificado en una nueva especialización que permite el almacenamiento de agua en cantidades mucho mayores que en el resto de las plantas.<br>  Esta adaptación les permite mantener reservas de agua durante períodos prolongados y sobrevivir en entornos áridos y secos que otras plantas encuentran inhabitables.</p></div></div>
-        <div class="sucu" id="carni"><div id="cuadroS"><p id="textoS">Una planta carnívora, también llamada planta insectívora, es una planta que obtiene parte o la mayoría de sus necesidades nutricionales (pero no de energía) mediante la captura y el consumo de animales y protozoos, normalmente insectos (además de otros artrópodos). Estas plantas crecen generalmente en lugares donde el suelo es pobre, en especial en nitrógeno, como las tierras ácidas pantanosas y los farallones rocosos.</p></div></div>
-        <div class="sucu" id="aroma"><div id="cuadroS"><p id="textoS">Las hierbas aromáticas son plantas muy utilizadas en la cocina mediterránea por sus cualidades aromáticas y condimentarias. <br>Son cultivadas en huertos de diferente extensión.
-        La expresión finas hierbas se utiliza por lo general para designar una mezcla de cuatro hierbas: cebollino, perifollo, estragón y perejil que constituyen el pilar de la cocina francesa.</p></div></div>
-        <div class="sucu" id="orna"><div id="cuadroS"><p id="textoS">Una planta ornamental es aquella que se cultiva y se comercializa con propósitos decorativos por sus características estéticas, como las flores, hojas, perfume, la peculiaridad de su follaje, frutos o tallos en jardines y diseños paisajísticos, como planta de interior o para flor cortada. Su cultivo, llamado floricultura, forma una parte fundamental de la horticultura.</p></div></div>
+
+    <div class="carousel-modal hidden">
+      <div class="carousel-modal-close"></div>
+      <div class="carousel-modal-controls">
+        <span class="carousel-modal-prev">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </span>
+        <span class="carousel-modal-next">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </span>
+      </div>
+      <div class="carousel-modal-content">
+      </div>
     </div>
-</div>
+<script type="text/javascript">
+  var carousel = (function() {
+  // Selectors
+  var carouselGridSelector = '.carousel-grid';
+  var carouselItemsSelector = '.carousel-item';
+  var carouselModalSelector = '.carousel-modal';
+  var carouselModalContentSelector = '.carousel-modal-content';
+  var carouselCloseButtonSelector = '.carousel-modal-close';
+  var carouselModalButtonPrevSelector = '.carousel-modal-prev';
+  var carouselModalButtonNextSelector = '.carousel-modal-next';
+  var carouselSlidesSelector = '.carousel-modal-content .carousel-item';
+
+  // Elements
+  var carouselGridElement = document.querySelector(carouselGridSelector);
+  var carouselGridItems = carouselGridElement.querySelectorAll(carouselItemsSelector);
+  var carouselModalElement = document.querySelector(carouselModalSelector);
+  var carouselCloseButtonElement =  carouselModalElement.querySelector(carouselCloseButtonSelector);
+  var carouselModalContentElement = carouselModalElement.querySelector(carouselModalContentSelector)
+  var carouselModalButtonPrevElement = carouselModalElement.querySelector(carouselModalButtonPrevSelector);
+  var carouselModalButtonNextElement = carouselModalElement.querySelector(carouselModalButtonNextSelector);
+
+  // Variables
+  var currentSlideIndex = 0;
+  var slidesLen = carouselGridItems.length;
+
+  // Convert an arrayLike into Array and get the index given and element
+  var getElementIndexFromArrayLike = function (arrayLike, element) {
+    return Array.from(arrayLike).indexOf(element);
+  }
+
+  var showCarousel = function () {
+    var clickedGridItem = this;
+    currentSlideIndex = getElementIndexFromArrayLike(carouselGridItems, clickedGridItem);
+
+    carouselModalElement.classList.remove('hidden')
+    toggleBodyOverflowHidden();
+    cloneCarouselItems();
+    showCurrentSlide(currentSlideIndex);
+  }
+
+  var hideCarousel = function() {
+    carouselModalElement.classList.add('hidden')
+    toggleBodyOverflowHidden();
+  }
+
+  var nextSlide = function() {
+    if(currentSlideIndex === (slidesLen - 1)) {
+      currentSlideIndex = 0;
+    } else {
+      currentSlideIndex += 1;
+    }
+
+    showCurrentSlide(currentSlideIndex);
+  }
+
+  var prevSlide = function() {
+    if (currentSlideIndex === 0) {
+      currentSlideIndex = (slidesLen - 1);
+    } else {
+      currentSlideIndex -= 1;
+    }
+
+    showCurrentSlide(currentSlideIndex);
+  }
+
+  var hideSlides = function(gridItem) {
+    gridItem.style.display = 'none';
+  }
+
+  var showCurrentSlide = function(currentIndex) {
+    var carouselSlideElements = document.querySelectorAll(carouselSlidesSelector)
+    carouselSlideElements.forEach(hideSlides);
+    carouselSlideElements[currentIndex].style.display = 'block';
+  }
+
+  var cloneCarouselItems = function() {
+    if (carouselModalContentElement && carouselModalContentElement.children && carouselModalContentElement.children.length <= 0) {
+      var clonedCarouselGrid = carouselGridElement.cloneNode(true);
+      carouselModalContentElement.appendChild(clonedCarouselGrid);
+    }
+  }
+
+  var toggleBodyOverflowHidden =  function() {
+    var body = document.querySelector('body');
+    var bodyOverflow = body.style.overflow;
+
+    if (bodyOverflow === 'hidden') {
+      body.style.overflow = 'visible';
+    } else {
+      body.style.overflow = 'hidden';
+    }
+  }
+
+  var init = function() {
+    carouselGridItems.forEach(function(gridItem){
+      gridItem.addEventListener('click', showCarousel);
+    })
+
+    carouselCloseButtonElement.addEventListener('click', hideCarousel);
+    carouselModalButtonPrevElement.addEventListener('click', prevSlide);
+    carouselModalButtonNextElement.addEventListener('click', nextSlide);
+    carouselModalContentElement.addEventListener('click', nextSlide);
+    document.addEventListener('keydown', function(e){
+      if (e.keyCode === 37) {
+        nextSlide();}
+      else if (e.keyCode === 39){
+        prevSlide();}
+      else if (e.keyCode === 27){
+        hideCarousel();}
+    })
+  };
+
+  return {
+    init: init
+  }
+}());
+
+// Entrada de la app
+document.addEventListener('DOMContentLoaded', function() {
+  carousel.init();
+});
+
+
+</script>
