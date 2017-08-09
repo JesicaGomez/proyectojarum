@@ -100,15 +100,7 @@
 }
 
 .carousel-modal-content .carousel-item figcaption {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  opacity: 0.75;
-  background: white;
-  color: black;
-  padding-left: 10px;
-  padding-right: 10px;
+  display: none;
 }
 
 /* Utils */
