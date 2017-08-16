@@ -12,7 +12,7 @@
   border: 10px solid white;
   border-radius: 2px;
   margin: 50px 20px;
-  width: 200px;
+  width: 400px;
   box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
 }
 
@@ -59,16 +59,14 @@
   font-family: FontAwesome;
   content: '\f00d';
   position: absolute;
-  width: 30px;
-  height: 30px;
+  right: 0;
+  top:0;
+  margin:10px;
   font-size: 24px;
   line-height: 1.2;
   text-align: center;
   border: 2px solid white;
   cursor: pointer;
-  left: calc(50% - 17px);
-  right: calc(50% - 17px);
-  transform: translate(195px, -215px);
   z-index: 10;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
@@ -95,7 +93,7 @@
 .carousel-modal-content .carousel-item {
   display: none;
   position: relative;
-  width: 400px;
+  width: 750px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
