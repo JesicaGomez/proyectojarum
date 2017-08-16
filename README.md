@@ -13,15 +13,6 @@ _Jarum_ es una organización que nacio del Macroproyecto [Moravia Florece  para 
 * Aromaticas
 * Compost orgánico
 
-_to my code
-rake assets:precompile RAILS_ENV=production
-
-
-commit
-
-git remote -v
-heroku git:remote -a jarum
-git push heroku master
-git push heroku yourbranch:master_
+_to_ _my_ _code_ rake assets:precompile RAILS_ENV=production git remote -v heroku git:remote -a jarum git push heroku master git push heroku yourbranch:master_
 
 
